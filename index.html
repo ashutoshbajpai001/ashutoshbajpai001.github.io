@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Ashutosh Bajpai, Software Developer and BTech CSE student building clean, responsive and user-friendly websites.">
+<meta name="theme-color" content="#07060d">
+<meta property="og:title" content="Ashutosh Bajpai | Software Developer">
+<meta property="og:description" content="BTech CSE student building clean, responsive and user-friendly websites.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%E2%9C%A8%3C/text%3E%3C/svg%3E">
+<title>Ashutosh Bajpai — Software Developer</title>
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;700&family=Manrope:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#07060d;--ink:#eeeaff;--mute:#9b96b8;--v:#7c5cff;--c:#22d3ee;--p:#ff4fa3;--glass:rgba(255,255,255,.06);--edge:rgba(255,255,255,.14);
+--d:'Unbounded','Arial Black',sans-serif;--b:'Manrope',system-ui,sans-serif;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#07060d}}
+:root[data-theme="dark"]{--bg:#07060d}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.6 var(--b);overflow-x:hidden}
+a{color:inherit;text-decoration:none}
+:focus-visible{outline:2px solid var(--c);outline-offset:3px}
+.aurora{position:fixed;inset:0;z-index:-1;overflow:hidden}
+.aurora i{position:absolute;width:55vmax;height:55vmax;border-radius:50%;filter:blur(90px);opacity:.45;animation:drift 22s ease-in-out infinite alternate}
+.aurora i:nth-child(1){background:var(--v);top:-20%;left:-10%}
+.aurora i:nth-child(2){background:var(--c);bottom:-30%;right:-15%;animation-delay:-8s;opacity:.3}
+.aurora i:nth-child(3){background:var(--p);top:30%;left:40%;width:35vmax;height:35vmax;animation-delay:-15s;opacity:.25}
+@keyframes drift{to{transform:translate(8vw,6vh) scale(1.2)}}
+#cur{position:fixed;width:340px;height:340px;margin:-170px 0 0 -170px;border-radius:50%;pointer-events:none;z-index:0;
+background:radial-gradient(circle,rgba(124,92,255,.18),transparent 65%);left:50%;top:40%}
+.wrap{max-width:1120px;margin:0 auto;padding:0 22px;position:relative;z-index:1}
+.glass{background:var(--glass);border:1px solid var(--edge);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);border-radius:26px}
+nav{position:sticky;top:calc(12px + env(safe-area-inset-top,0px));z-index:10;margin:14px auto 0;max-width:520px;display:flex;justify-content:space-between;align-items:center;padding:10px 12px 10px 22px;border-radius:999px}
+nav b{font:700 15px var(--d)}
+nav div a{padding:8px 14px;border-radius:999px;color:var(--mute);font-size:15px}
+nav div a:hover{background:var(--glass);color:var(--ink)}
+#hero{min-height:84vh;display:flex;flex-direction:column;justify-content:center;padding:60px 0}
+.pill{align-self:flex-start;padding:8px 16px;border-radius:999px;font-size:14px;color:var(--mute);display:flex;gap:10px;align-items:center}
+.pill::before{content:"";width:8px;height:8px;border-radius:50%;background:#4ade80;box-shadow:0 0 12px #4ade80}
+h1{font:700 clamp(40px,9.5vw,118px)/1 var(--d);letter-spacing:-.05em;margin:26px 0 0}
+.grad{background:linear-gradient(100deg,var(--c),var(--v) 45%,var(--p));-webkit-background-clip:text;background-clip:text;color:transparent;background-size:200% 100%;animation:sh 6s linear infinite}
+@keyframes sh{to{background-position:-200% 0}}
+.role{font:500 clamp(18px,3vw,28px) var(--d);margin:22px 0 0;color:var(--mute);min-height:1.3em}
+.role span{color:var(--ink)}
+.role em{display:inline-block;width:3px;height:.9em;background:var(--c);margin-left:4px;vertical-align:-.1em;animation:bl 1s steps(1) infinite}
+@keyframes bl{50%{opacity:0}}
+.lede{max-width:52ch;color:var(--mute);margin:20px 0 32px;font-size:19px}
+.btns{display:flex;gap:14px;flex-wrap:wrap}
+.btn{padding:15px 28px;border-radius:999px;font-weight:700;transition:transform .2s}
+.btn:hover{transform:translateY(-3px)}
+.btn.pri{background:linear-gradient(100deg,var(--v),var(--p));box-shadow:0 10px 40px -8px var(--v)}
+.btn.sec{border:1px solid var(--edge);background:var(--glass)}
+.marq{overflow:hidden;border-block:1px solid var(--edge);padding:18px 0;margin:10px 0 40px;mask-image:linear-gradient(90deg,transparent,#000 12%,#000 88%,transparent)}
+.marq div{display:flex;gap:48px;padding-right:48px;width:max-content;animation:mq 26s linear infinite;font:500 22px var(--d);color:var(--mute)}
+.marq span::after{content:"✦";margin-left:48px;color:var(--v)}
+@keyframes mq{to{transform:translateX(-50%)}}
+section{padding:60px 0}
+h2{font:700 clamp(28px,5vw,52px)/1.05 var(--d);letter-spacing:-.04em;margin:0 0 32px}
+.bento{display:grid;grid-template-columns:repeat(6,1fr);gap:16px}
+.card{padding:22px;position:relative;overflow:hidden;transition:transform .15s ease-out,border-color .3s;transform-style:preserve-3d;display:flex;flex-direction:column;justify-content:flex-end;min-height:280px}
+.card:focus-within{border-color:rgba(255,255,255,.35)}
+.card:hover{border-color:rgba(255,255,255,.35)}
+.card.a{grid-column:span 4;min-height:380px}.card.b{grid-column:span 2}.card.c{grid-column:span 2}.card.d{grid-column:span 4}
+.art{position:absolute;inset:0;opacity:.9}
+.card::after{content:"";position:absolute;inset:0;background:linear-gradient(to top,rgba(7,6,13,.92) 15%,transparent 65%)}
+.card>*:not(.art){position:relative;z-index:1}
+.card h3{font:700 22px/1.2 var(--d);margin:0 0 8px;letter-spacing:-.03em}
+.card p{margin:0 0 14px;color:#c9c4e4;font-size:15px}
+.tags{display:flex;flex-wrap:wrap;gap:8px}
+.tags span{font-size:13px;padding:4px 12px;border-radius:999px;background:rgba(255,255,255,.1);border:1px solid var(--edge)}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:16px}
+.stat{padding:26px;text-align:center}
+.stat b{display:block;font:700 clamp(32px,5vw,52px) var(--d);letter-spacing:-.04em}
+.stat span{color:var(--mute);font-size:15px}
+.about{display:grid;grid-template-columns:1.1fr 1fr;gap:16px}
+.about .glass{padding:30px}
+.about p{color:var(--mute);margin:0 0 14px}
+.sk{display:flex;flex-wrap:wrap;gap:10px;padding:0;margin:0;list-style:none}
+.sk li{padding:10px 18px;border-radius:14px;background:var(--glass);border:1px solid var(--edge);font-weight:500;transition:.2s}
+.sk li:hover{border-color:var(--c);color:var(--c);transform:translateY(-3px)}
+#contact .glass{padding:clamp(32px,7vw,80px);text-align:center;position:relative;overflow:hidden}
+#contact h2{font-size:clamp(30px,6.5vw,76px);margin-bottom:24px}
+.mail{display:inline-block;font:500 clamp(16px,3vw,26px) var(--d);border-bottom:2px solid var(--v);padding-bottom:4px;word-break:break-word}
+.soc{display:flex;gap:12px;justify-content:center;margin-top:30px;flex-wrap:wrap}
+.soc a{padding:10px 22px;border-radius:999px;border:1px solid var(--edge);background:var(--glass)}
+.soc a:hover{background:var(--v)}
+footer{text-align:center;color:var(--mute);font-size:14px;padding:40px 0}
+@media (max-width:760px){.bento,.about{grid-template-columns:1fr}.card.a,.card.b,.card.c,.card.d{grid-column:auto;min-height:300px}.stats{grid-template-columns:1fr}nav div a{padding:8px 9px}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<div class="aurora"><i></i><i></i><i></i></div><div id="cur"></div>
+<div class="wrap">
+<nav class="glass"><b>AB</b><div><a href="#work">Projects</a><a href="#about">About</a><a href="#contact">Contact</a></div></nav>
+
+<header id="hero">
+<div class="pill glass">Open to internships &amp; opportunities</div>
+<h1>Hi, I'm <span class="grad">Ashutosh</span></h1>
+<p class="role">I build <span id="t"></span><em></em></p>
+<p class="lede"><strong style="color:var(--ink)">Software Developer &amp; BTech CSE Student.</strong> I enjoy building clean, responsive, and user-friendly websites.</p>
+<div class="btns"><a class="btn pri" href="#work">View my work</a><a class="btn sec" href="#contact">Let's talk</a></div>
+</header>
+
+<div class="marq" aria-hidden="true"><div>
+<span>C++</span><span>Python</span><span>Java</span><span>C</span><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Git &amp; GitHub</span><span>FastAPI</span>
+<span>C++</span><span>Python</span><span>Java</span><span>C</span><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Git &amp; GitHub</span><span>FastAPI</span>
+</div></div>
+
+<section id="work">
+<h2>Projects</h2>
+<div class="bento">
+<article class="card glass a" style="grid-column:1/-1;min-height:300px" data-tilt><div class="art" style="background:radial-gradient(circle at 70% 30%,#7c5cff,transparent 55%),radial-gradient(circle at 20% 80%,#22d3ee,transparent 50%),#14102a"></div><h3>My first project is on the way</h3><p>I'm currently building it. It will be showcased here as soon as it's ready.</p><div class="tags"><span>In progress</span></div></article>
+</div>
+<div class="stats">
+<div class="glass stat"><b data-n="4">0</b><span>Programming languages</span></div>
+<div class="glass stat"><b data-n="3">0</b><span>Web technologies</span></div>
+<div class="glass stat"><b data-n="1">0</b><span>Project in progress</span></div>
+</div>
+</section>
+
+<section id="about">
+<h2>About me</h2>
+<div class="about">
+<div class="glass"><p>I'm a BTech CSE student who enjoys learning about software development and building things with code. I'm currently improving my skills in web development, C++, Python, and problem solving.</p><p>Outside of coding, I enjoy exploring new technologies and working on personal projects.</p></div>
+<div class="glass"><ul class="sk"><li>C++</li><li>Python</li><li>Java</li><li>C</li><li>HTML</li><li>CSS</li><li>JavaScript</li><li>Git &amp; GitHub</li><li>FastAPI</li></ul></div>
+</div>
+</section>
+
+<section id="contact">
+<div class="glass">
+<h2>Let's build something <span class="grad">great</span></h2>
+<a class="mail" href="mailto:ashubajpai1540@gmail.com">ashubajpai1540@gmail.com</a>
+<div class="soc"><a href="https://github.com/ashutoshbajpai001" target="_blank" rel="noopener">GitHub</a><a href="https://www.linkedin.com/in/ashutosh-bajpai-8b60b13a6" target="_blank" rel="noopener">LinkedIn</a></div>
+</div>
+</section>
+<footer>&copy; 2026 Ashutosh Bajpai &nbsp;·&nbsp; <a href="#hero" style="text-decoration:underline">Back to top</a></footer>
+</div>
+<script>
+const cur=document.getElementById('cur');
+addEventListener('pointermove',e=>{cur.style.left=e.clientX+'px';cur.style.top=e.clientY+'px'});
+const words=['modern websites','responsive interfaces','interactive web experiences','useful web tools'];let w=0,i=0,del=false;const t=document.getElementById('t');
+(function tick(){const s=words[w];t.textContent=s.slice(0,i);
+if(!del&&i===s.length){del=true;return setTimeout(tick,1600)}
+if(del&&i===0){del=false;w=(w+1)%words.length}
+i+=del?-1:1;setTimeout(tick,del?35:70)})();
+document.querySelectorAll('[data-tilt]').forEach(c=>{
+c.addEventListener('pointermove',e=>{const r=c.getBoundingClientRect(),x=(e.clientX-r.left)/r.width-.5,y=(e.clientY-r.top)/r.height-.5;
+c.style.transform=`perspective(800px) rotateY(${x*8}deg) rotateX(${-y*8}deg) translateY(-4px)`});
+c.addEventListener('pointerleave',()=>c.style.transform='')});
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(!e.isIntersecting)return;io.unobserve(e.target);
+const el=e.target,n=+el.dataset.n;let k=0;const s=setInterval(()=>{k++;el.textContent=k;if(k>=n)clearInterval(s)},1000/n>60?60:1000/n)}));
+document.querySelectorAll('[data-n]').forEach(el=>io.observe(el));
+</script>
+</body>
+</html>
